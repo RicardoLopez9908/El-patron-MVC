@@ -17,6 +17,6 @@ __El principio básico detras de JUnit es la comparación de rresultados esperad
 
 - Hacemos que nuestro proyecto gane visibilidad en los otros que componen el espacio de trabajo ( Configuración de proyecto > BuildPath > Configure Build Path... > Projects > Add...) y agregamos las clases que queremos testear.
 
--Dentro de nuestro proyecto creamos un nuevo __JUnit case__ para hacer una prueba unitaria (elegir la "Class under test" que usaremos para realizar el test).
+- Dentro de nuestro proyecto creamos un nuevo __JUnit case__ para hacer una prueba unitaria (elegir la "Class under test" que usaremos para realizar el test).
 
--Si queremos hacer un conjunto de pruebas, creamos un nuevo __JUnit suite__ que contenga todas las pruebas unitarias que querramos. (los tests unitarios seleccionados deben tener visibilidad publica para esto).
+- Si queremos hacer un conjunto de pruebas, creamos un nuevo __JUnit suite__ que contenga todas las pruebas unitarias que querramos. (los tests unitarios seleccionados deben tener visibilidad publica para esto).
