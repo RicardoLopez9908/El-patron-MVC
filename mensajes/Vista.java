@@ -1,9 +1,5 @@
 package mvc;
 
-//Deberá agregar 5 líneas de código en cada uno de los lugares 
-//indicados. Los podrá reconocer porque se encuentran 
-//indicaciones en líneas de comentarios
-
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
 import java.awt.Container;
@@ -46,12 +42,6 @@ public class Vista{
         System.out.println("Vista " + idVista +
                 ": Vista(modelo) ");
         construirLaPantallaDeSalida();
-		// ** 1 Acción Requerida: falta una línea de código
-		// ** Pista 1: La vista debe registrarse a sí misma 
-		// ** como listener (oyente) de los de los cambios de
-		// ** información almacenada en el modelo
-		// ** Pista 2: Llamar al método agregrarOyenteDeCambiosEnElModelo() 
-		// ** del objeto modelo y pasarle la referencia de ESTE objeto vista
         modelo.agregrarOyenteDeCambiosEnElModelo(this);
     }
     
@@ -122,13 +112,6 @@ public class Vista{
             for (Controlador con: oyentes) {
                 System.out.println("Vista " + idVista +
                         ": disparar el evento procesarActualizarMensaje");
-				// ** Preguntarse: ¿qué debería hacer este método?
-				// ** 2 Acción Requerida: falta una línea de código
-				// ** Pista 1: Informar al objeto controlador con que el usuario
-				// ** ha presionado el botón "Actualizar Mensaje"
-				// ** Pista 2: Llamar al método procesarActualizarMensaje()
-				// ** del objetocontrolador con y pasarle el texto ingresado 
-				// ** en el textfield textoMensaje.(Ej: textoMensaje.getText())
                 con.procesarActualizarMensaje(textoMensaje.getText());
             }
         }
@@ -141,12 +124,6 @@ public class Vista{
             for (Controlador con: oyentes) {
                 System.out.println("Vista " + idVista +
                         ": disparar el evento procesarObtenerMensaje");
-				// ** Preguntarse: ¿qué debería hacer este método?
-				// ** 3 Acción Requerida: falta una línea de código
-				// ** Pista 1: Informar al objeto controlador con que el usuario
-				// ** ha presionado el botón "Obtener mensaje"
-				// ** Pista 2: Llamar al método procesarObtenerMensaje() 
-				// ** del objeto controlador con
                 con.procesarObtenerMensaje();
             }
         }
@@ -159,13 +136,6 @@ public class Vista{
             for (Controlador con: oyentes) {
                 System.out.println("Vista " + idVista +
                         ": disparar el evento procesarActualizarClima");
-				// ** 4 Acción Requerida: falta una línea de código
-				// ** Pista 1: Informar al objeto controlador con que el usuario
-				// ** ha presionado el botón "Actualizar Clima"
-				// ** Pista 2: Llamar al método procesarActualizarClima()
-				// ** del objeto controlador con 
-				// ** y pasarle el texto ingresado en el
-				// ** textfield textoClima.(Ej: textoClima.getText())
                 con.procesarActualizarClima(textoClima.getText());
             }
         }
@@ -178,11 +148,6 @@ public class Vista{
             for (Controlador con: oyentes) {
                 System.out.println("Vista " + idVista +
                         ": disparar el evento procesarObtenerClima");
-				// ** 5 Acción Requerida: falta una línea de código
-				// ** Pista 1: Informar al objeto controlador con que el usuario
-				// ** ha presionado el botón "Obtener Clima"
-				// ** Pista 2: Llamar al método procesarObtenerClima() 
-				// ** del objeto controlador con
                 con.procesarObtenerClima();
             }
         }
