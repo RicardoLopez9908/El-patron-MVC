@@ -2,7 +2,7 @@
 
 Permite dividir la funcionalidad y minimizar el acoplamiento entre los objetos involucrados.
 
-![Img]()
+![Img](https://github.com/RicardoLopez9908/El-patron-MVC/blob/master/Patron%20de%20dise%C3%B1o%20MVC.png)
 
 __Model (modelo):__
 
