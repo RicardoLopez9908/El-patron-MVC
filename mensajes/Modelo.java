@@ -1,9 +1,5 @@
 package mvc;
 
-//Deberá agregar 3 líneas de código en cada uno de los lugares indicados
-//Los podrá reconocer porque se encuentran indicaciones 
-//en líneas de comentarios
-
 import java.util.*;
 public class Modelo {
     
@@ -31,22 +27,12 @@ public class Modelo {
     public void setMensaje(String mensaje) {
         System.out.println("Modelo: setMensaje() ");
         this.mensaje = mensaje;
-		// ** 1 Acción Requerida: falta una línea de código
-		// ** Pista 1: debe informar a todas las vistas que 
-		// ** el modelo hacambiado
-		// ** Pista 2: Llamar al método disparaEventoDeCambioEnElModelo()
-		// ** pasarle el atributo mensaje
         disparaEventoDeCambioEnElModelo(mensaje);
     }
     
     public void setClima(String clima) {
         System.out.println("Modelo: setClima() ");
         this.clima = clima;
-		// ** 2 Acción Requerida: falta una línea de código
-		// ** Pista 1: debe informar a todas las vistas que 
-		// ** el modelo ha cambiado
-		// ** Pista 2: Llamar al método disparaEventoDeCambioEnElModelo()
-		// ** pasarle el atributo clima
         disparaEventoDeCambioEnElModelo(clima);
     }
     
@@ -59,11 +45,6 @@ public class Modelo {
     private void disparaEventoDeCambioEnElModelo(Object o) {
         for (Vista v: oyentes) {
             System.out.println("Modelo: disparaEventoDeCambioEnElModelo() - Ciclo for para informar a los oyentes");
-			// ** 3 Acción Requerida: falta una línea de código
-			// ** Pista 1: debe informar al objeto vista v que
-			// ** el modelo ha cambiado
-			// ** Pista 2: Llamar al método procesarCambioEnElModelo()
-			// ** del objeto vista v pasarle el atributo o
             v.procesarCambioEnElModelo(o);
         }
     }
