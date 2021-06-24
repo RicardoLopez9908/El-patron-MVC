@@ -2,6 +2,8 @@
 
 Permite dividir la funcionalidad y minimizar el acoplamiento entre los objetos involucrados.
 
+![Img]()
+
 __Model (modelo):__
 
 representa los datos de la aplicación y las reglas de negocio que gobiernan el acceso y modificación de datos.
