@@ -2,8 +2,7 @@
 
 Permite dividir la funcionalidad y minimizar el acoplamiento entre los objetos involucrados.
 
-
-## Model (modelo):
+ Model (modelo):
 representa los datos de la aplicación y las reglas de negocio que gobiernan el acceso y modificación de datos.
 
 ## View (vista):
