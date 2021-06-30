@@ -15,3 +15,8 @@ Realiza las salidas por la interfaz gráfica de los datos que se encuentran en e
 __Controller (controlador):__
 
 Define el comportamiento de la aplicación a traves de interpretar y convertir las acciones del usuario en acciones realizadas por el modelo.
+
+
+
+<img src="https://github.com/RicardoLopez9908/El-patron-MVC-y-pruebas-JUnit/blob/master/Patron%20MVC%20-%202%20clientes.png" width="500">
+
