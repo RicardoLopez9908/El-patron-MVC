@@ -1,0 +1,69 @@
+package botones;
+
+import java.awt.Container;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class EventosPanelDeBotonesOpcion2 {
+
+	protected JFrame frame;
+
+	protected Container contentPane;
+
+	protected JButton btClientes = new JButton("Cliente");
+
+	protected JButton btTodosLosClientes = new JButton("Todos Los Clientes");
+
+	protected JButton btCartera = new JButton("Cartera");
+
+	protected JButton btInventario = new JButton("Inventario");
+
+	public EventosPanelDeBotonesOpcion2() {
+		frame = new JFrame("Panel de Botones");
+		contentPane = frame.getContentPane();
+		contentPane.setLayout(new GridLayout(1, 4));
+		contentPane.add(btClientes);
+		contentPane.add(btTodosLosClientes);
+		contentPane.add(btCartera);
+		contentPane.add(btInventario);
+		registrarOyentesDeEventos();
+		frame.pack();
+		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		frame.setVisible(true);
+	}
+
+	public void registrarOyentesDeEventos() {
+// Registrar los oyentes de eventos para todos lo JButtons
+		ActionListener manejadorDelBoton = new ButtonPanelInnerHandler();
+		btClientes.addActionListener(manejadorDelBoton);
+		btCartera.addActionListener(manejadorDelBoton);
+		btTodosLosClientes.addActionListener(manejadorDelBoton);
+		btInventario.addActionListener(manejadorDelBoton);
+	}
+
+	// Manejo del Evento en una clase anidada
+	class ButtonPanelInnerHandler implements ActionListener {
+		public void actionPerformed(ActionEvent e) {
+			if (e.getActionCommand().equals("Cliente")) {
+// Código para procesar cuando se presiona el botón "Cliente"
+			}
+			if (e.getActionCommand().equals("Todos Los Clientes")) {
+// Código para procesar cuando se presiona el botón
+// "Todos Los Clientes"
+			}
+			if (e.getActionCommand().equals("Cartera")) {
+// Código para procesar cuando se presiona el botón "Cartera"
+			}
+			if (e.getActionCommand().equals("Inventario")) {
+// Código para procesar cuando se presiona el botón "Inventario"
+			}
+		}
+	}
+
+	public static void main(String args[]) {
+		EventosPanelDeBotonesOpcion2 igu = new EventosPanelDeBotonesOpcion2();
+	}
+}
