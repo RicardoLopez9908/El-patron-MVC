@@ -1,0 +1,73 @@
+package botones;
+
+import java.awt.Container;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class EventosPanelDeBotonesOpcion3 {
+
+	protected JFrame frame;
+
+	protected Container contentPane;
+
+	protected JButton btClientes = new JButton("Cliente");
+
+	protected JButton btTodosLosClientes = new JButton("Todos Los Clientes");
+
+	protected JButton btCartera = new JButton("Cartera");
+
+	protected JButton btInventario = new JButton("Inventario");
+
+	public EventosPanelDeBotonesOpcion3() {
+		frame = new JFrame("Panel de Botones");
+		contentPane = frame.getContentPane();
+		contentPane.setLayout(new GridLayout(1, 4));
+		contentPane.add(btClientes);
+		contentPane.add(btTodosLosClientes);
+		contentPane.add(btCartera);
+		contentPane.add(btInventario);
+		registrarOyentesDeEventos();
+		frame.pack();
+		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		frame.setVisible(true);
+	}
+
+	public void registrarOyentesDeEventos() {
+// Registrar los oyentes de eventos para todos lo JButtons
+		btClientes.addActionListener(manejadorDeLaPaginaDeDetallesDeCliente);
+		btCartera.addActionListener(manejadorDeLaPaginaDeCartera);
+		btTodosLosClientes.addActionListener(manejadorDeLaPaginaDeTodosLosClientes);
+		btInventario.addActionListener(manejadorDeLaPaginaDeInventario);
+	}
+
+// Métodos manejadores de eventos
+	ActionListener manejadorDeLaPaginaDeDetallesDeCliente = new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+// Código para procesar cuando se presiona el botón
+// "Cliente"
+		}
+	};
+	ActionListener manejadorDeLaPaginaDeTodosLosClientes = new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+// Código para procesar cuando se presiona el botón
+// "Todos Los Clientes"
+		}
+	};
+	ActionListener manejadorDeLaPaginaDeCartera = new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+// Código para procesar cuando se presiona el botón "Cartera"
+		}
+	};
+	ActionListener manejadorDeLaPaginaDeInventario = new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+// Código para procesar cuando se presiona el botón "Inventario"
+		}
+	};
+
+	public static void main(String args[]) {
+		EventosPanelDeBotonesOpcion3 igu = new EventosPanelDeBotonesOpcion3();
+	}
+}
