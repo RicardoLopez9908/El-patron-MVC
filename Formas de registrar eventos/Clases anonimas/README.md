@@ -1,1 +1,1 @@
-Las clases anidadas anónima proveen una alternativa para crear oyentes de eventos. Muy a menudo, utilizar clases anidadas anónimas es una manera muy elegante de crear código para el manejo de eventos.
+Las clases anidadas anónimas proveen una alternativa para crear oyentes de eventos. Muy a menudo, utilizar clases anidadas anónimas es una manera muy elegante de crear código para el manejo de eventos.
